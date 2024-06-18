@@ -24,12 +24,15 @@ const createTankerController = async (req, res) =>{
     }
 }
 
+
+
+
 const getTankersByIDController = async(req, res)=>{
     
     try {
         const prisma = new PrismaClient()
         const {id} = req.params
-        const findTanker = await prisma.tanker.findFirst({id})
+        const findTanker = await prisma.tanker.findFirst({where: {id: Number(id)}})
         const status  = findTanker.error ? 404:200
         res.status(status).json(findTanker)
     } catch (error) {
