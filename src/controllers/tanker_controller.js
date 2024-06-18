@@ -45,10 +45,14 @@ const updateTankerController = async (req, res) =>{
     try {
         const prisma = new PrismaClient()
         const {id} = req.params
-        const tanker = await prisma.tanker.update({id, data:req.body})
+        const tanker = await prisma.tanker.update({
+            where: {id: Number(id)}, 
+            data: req.body
+        })
         const status = tanker.error ? 404:200
         res.status(status).json(tanker)
     } catch (error) {
+        console.log(error);
         res.status(500).json({msg:'Error del servidor'})
     }
 }
@@ -58,9 +62,11 @@ const deleteTankerController = async(req, res)=>{
     try {
         const prisma = new PrismaClient()
         const {id} = req.params
-        const tankerFind = await prisma.tanker.delete({id})
+        const tankerFind = await prisma.tanker.delete({
+            where: {id:Number(id)}
+        })
         const status = tankerFind.error ? 404:200
-        res.status(status).json(tankerFind)
+        res.status(status).json({msg: "Elemento eliminado correctamente"})
     } catch (error) {
         res.status(500).json({msg:'Error del servidor'})
     }
