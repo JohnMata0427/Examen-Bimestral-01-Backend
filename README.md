@@ -1,6 +1,6 @@
 <h1 align="center"><img src="https://github.com/JohnMata0427/Laboratorio-12-13/assets/150484680/bfb548e6-b88e-4a4b-a356-42fe727eeb0b" height="35px"> Bi-monthly exam backend <img src="https://github.com/JohnMata0427/Laboratorio-12-13/assets/150484680/bfb548e6-b88e-4a4b-a356-42fe727eeb0b" height="35px"></h1>
 
-## 👨‍⚖️ RESTful API about routes and schedules of gas cylinder delivery trucks
+##  RESTful API about routes and schedules of gas cylinder delivery trucks
 
 The objective of this API is to improve access to accurate and updated information on the routes and schedules of gas trucks in Quito to facilitate the supply of gas to homes and businesses.
 
