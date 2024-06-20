@@ -1,9 +1,8 @@
-<h1 align="center"><img src="https://github.com/JohnMata0427/Laboratorio-12-13/assets/150484680/bfb548e6-b88e-4a4b-a356-42fe727eeb0b" height="35px"> Authentication and Authorization <img src="https://github.com/JohnMata0427/Laboratorio-12-13/assets/150484680/bfb548e6-b88e-4a4b-a356-42fe727eeb0b" height="35px"></h1>
+<h1 align="center"><img src="https://github.com/JohnMata0427/Laboratorio-12-13/assets/150484680/bfb548e6-b88e-4a4b-a356-42fe727eeb0b" height="35px"> Bi-monthly exam backend <img src="https://github.com/JohnMata0427/Laboratorio-12-13/assets/150484680/bfb548e6-b88e-4a4b-a356-42fe727eeb0b" height="35px"></h1>
 
-## 👨‍⚖️ RESTful API of Public Connotation Cases in Ecuador 🇪🇨
+## 👨‍⚖️ RESTful API about routes and schedules of gas cylinder delivery trucks
 
 The objective of this API is to improve access to accurate and updated information on the routes and schedules of gas trucks in Quito to facilitate the supply of gas to homes and businesses.
-
 
 RESTful API Deployment URL: https://examen-bimestral-01-backend.onrender.com/
 
