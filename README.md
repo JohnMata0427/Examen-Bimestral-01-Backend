@@ -42,13 +42,13 @@ In private routes (POST, PUT and DELETE) include the token granted upon login in
 {
   "rute": [],
   "capacity":{
-    "blue": number, 
-    "yellow": number, 
-    "green": number
+    "blue": 10, 
+    "yellow": 10, 
+    "green": 10 
   },
   "startsAt":"",
   "endsAt":"",
-  "driverId":number
+  "driverId":1
 }
 ```
 
