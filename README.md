@@ -14,15 +14,6 @@ Route to register new user account:
 ```http
 POST /api/v1/users/register
 ```
-
-Route to log in to the registered user account:
-
-```http
-POST /api/v1/users/login
-```
-
-In the request body include the following properties:
-
 ```json
 {
   "username": "Your username",
@@ -30,6 +21,20 @@ In the request body include the following properties:
   "password": "Your password"
 }
 ```
+
+Route to log in to the registered user account:
+
+```http
+POST /api/v1/users/login
+```
+
+```json
+{
+  "username": "Your username",
+  "password": "Your password"
+}
+```
+
 
 ## 🛠️ API Architecture (CRUD Operations)
 
