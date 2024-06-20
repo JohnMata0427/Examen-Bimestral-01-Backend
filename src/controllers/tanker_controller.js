@@ -27,7 +27,7 @@ const getTankersByIDController = async(req, res)=>{
     try {
         const prisma = new PrismaClient()
         const {id} = req.params
-        const findTanker = await prisma.tanker.findFirst({where: { id }})
+        const findTanker = await prisma.tanker.findFirst({where: { id: parseInt(id) }})
         const status  = findTanker.error ? 404 : 200
         res.status(status).json(findTanker)
     } catch (error) {
@@ -40,7 +40,7 @@ const updateTankerController = async (req, res) =>{
         const prisma = new PrismaClient()
         const {id} = req.params
         const tanker = await prisma.tanker.update({
-            where: {id}, 
+            where: {id: parseInt(id)}, 
             data: req.body
         })
         const status = tanker.error ? 404:200
@@ -55,7 +55,7 @@ const deleteTankerController = async(req, res)=>{
         const prisma = new PrismaClient()
         const {id} = req.params
         const tankerFind = await prisma.tanker.delete({
-            where: { id }
+            where: { id: parseInt(id) }
         })
         const status = tankerFind.error ? 404:200
         res.status(status).json({msg: "Elemento eliminado correctamente"})
