@@ -16,7 +16,7 @@ const createTankerController = async (req, res) =>{
         const datetime = new Date(startsAt);
         const datetime2 = new Date(endsAt);
         const newtankerData = await prisma.tanker.create({data:{...data, startsAt: datetime , endsAt:datetime2}}) 
-        
+        console.log(newtankerData);
         res.status(201).json(newtankerData);
     } catch (error) {
         res.status(500).json({msg:error.message})
