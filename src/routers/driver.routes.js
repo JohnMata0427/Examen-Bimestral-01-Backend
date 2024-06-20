@@ -8,7 +8,7 @@ const router=Router()
 router.get('/drivers', getAllDriversController) 
 router.get('/drivers/:id', getDriversByIDController)
 router.post('/drivers', createDriverController)
-router.put('/drivers/:id', verifyToken, updateDriverController)
-router.delete('/drivers/:id', verifyToken, deleteDriverController)
+router.put('/drivers/:id', updateDriverController)
+router.delete('/drivers/:id', deleteDriverController)
 
 export default router
