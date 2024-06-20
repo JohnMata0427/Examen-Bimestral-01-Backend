@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "dev": "node --watch src/index.js",
-    "postbdd": "npx prisma migrate dev --name init"
+    "postbdd": "npx prisma migrate dev --name init",
+    "start": "node src/index.js"
   },
   "keywords": [],
   "author": "",
