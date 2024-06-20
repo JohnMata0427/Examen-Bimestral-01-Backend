@@ -30,7 +30,8 @@ model Tanker {
     id       Int   @id @default(autoincrement())
     rute String[]
     capacity Json // { "blue": 20, "yellow": 10, "green": 10 }
-    schedule DateTime
+    startsAt DateTime
+    endsAt DateTime
     driverId Int
     driver Driver @relation(fields: [driverId], references: [id])
 }

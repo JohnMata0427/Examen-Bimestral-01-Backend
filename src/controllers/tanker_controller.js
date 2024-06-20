@@ -13,7 +13,8 @@ const createTankerController = async (req, res) =>{
     try {
         const prisma = new PrismaClient();
         const {schedule, ...data} = req.body
-        const newtankerData = await prisma.tanker.create({data:{...data, schedule:Date(schedule)}}) 
+        const datetime = new Date(schedule)
+        const newtankerData = await prisma.tanker.create({data:{...data, schedule: datetime}}) 
         
         res.status(201).json(newtankerData);
     } catch (error) {
